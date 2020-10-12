@@ -7,5 +7,8 @@ describe('Test with Page Object', () =>{
   it('verify navigation across the pages', () =>{
     navigateTo.formLayoutsPage();
     navigateTo.datePickerPage();
+    navigateTo.toasterPage();
+    navigateTo.smartTablePage();
+    navigateTo.tooltipPage();
   })
 })
