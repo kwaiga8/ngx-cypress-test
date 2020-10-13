@@ -19,21 +19,22 @@ export class NavigationPage{
    cy.contains('Forms').click();
    selectGroupMenuItem('Form');
    cy.contains('Datepicker').click();
- }
+ };
 
  toasterPage(){
    selectGroupMenuItem('Modal & Overlays')
    cy.contains('Toastr').click();
- }
+ };
 
  smartTablePage(){
    selectGroupMenuItem('Tables & Data')
    cy.contains('Smart Table').click();
- }
+ };
+
   tooltipPage(){
     selectGroupMenuItem('Modal & Overlays')
     cy.contains('Tooltip').click();
-  }
+  };
 
 }
 

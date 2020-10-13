@@ -50,7 +50,7 @@ describe('My second suite', () => {
     cy.get('[for="exampleInputEmail1"]')
       .should('contain', 'Email address')
       .should('have.class', 'label')
-      .and('have.text', 'Email addres');
+      .and('have.text', 'Email address');
 
     //2
     cy.get('[for="exampleInputEmail1"]').then( label => {
