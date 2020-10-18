@@ -1,15 +1,13 @@
-import {onFormLayoutsPage} from "../support/page_objects/formLayoutsPage";
-import {navigateTo} from "../support/page_objects/navigationPage";
-
-
-
+import {onFormLayoutsPage} from "../support/page_objects/formLayoutsPage.js";
+import {navigateTo} from "../support/page_objects/navigationPage.js";
+import {onDatePickerPage} from "../support/page_objects/datepickerPage";
 
 describe('Test with Page Object', () =>{
 
 
   beforeEach('open application', () =>{
     cy.visit('/')
-  })
+  });
 
   it('verify navigation across the pages', () =>{
     navigateTo.formLayoutsPage();
@@ -23,5 +21,8 @@ describe('Test with Page Object', () =>{
     navigateTo.formLayoutsPage();
     onFormLayoutsPage.submitInLineFormWithNameAndEmail('Wlodek', 'wlo@wp.pl');
     onFormLayoutsPage.submitBasicFormWithEmailAndPassword('olo@op.pl', 'Kasia1234');
+    navigateTo.datePickerPage();
+    onDatePickerPage.selectCommonDatepickerDateFromToday(1);
+    onDatePickerPage.selectDatepickerWithRangeFromToday(7,14);
   });
-})
+});
