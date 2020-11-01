@@ -2,7 +2,6 @@
   "baseUrl": "http://localhost:4200/",
   "ignoreTestFiles": ["**/examples/*",
     "**/__snapshots__/*",
-    "**/*/firstTest.spec.js",
     "**/*/secondTest.spec.js",
     "**/__image_snapshots__/*"
   ],

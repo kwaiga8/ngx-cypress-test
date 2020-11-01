@@ -25,3 +25,7 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 //USE to write some common actions and Overwritting
+//loaded before any test files are evaluated
+Cypress.Commands.add('openHomePage', () =>{
+  cy.visit('/');
+});
